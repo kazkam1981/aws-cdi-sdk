@@ -55,7 +55,7 @@ const char* InternalUtilityKeyEnumToString(InternalEnumStringKeyTypes key_type, 
  *
  * @return The smallest multiple of quantum equal to or greater than value.
  */
-static inline int NextMultipleOf(int value, int quantum)
+static inline int64_t NextMultipleOf(int64_t value, int quantum)
 {
     assert(value > 0);
     assert(quantum > 0);
